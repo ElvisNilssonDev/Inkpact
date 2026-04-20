@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Gigs.Queries.GetMyPostedGigs
 {
-    internal class GetMyPostedGigsQuery
+    public class GetMyPostedGigsQuery
     {
     }
 }

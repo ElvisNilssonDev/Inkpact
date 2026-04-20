@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Interfaces
 {
-    internal interface IInvoiceRepository
+    public interface IInvoiceRepository
     {
     }
 }

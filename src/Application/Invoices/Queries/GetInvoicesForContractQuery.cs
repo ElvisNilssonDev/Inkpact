@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Invoices.Queries
 {
-    internal class GetInvoicesForContractQuery
+    public class GetInvoicesForContractQuery
     {
     }
 }

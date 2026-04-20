@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Proposals.Commands.WithdrawProposal
 {
-    internal class WithdrawProposalCommand
+    public class WithdrawProposalCommand
     {
     }
 }

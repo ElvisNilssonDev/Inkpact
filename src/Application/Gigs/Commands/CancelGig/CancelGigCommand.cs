@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Gigs.Commands.CancelGig
 {
-    internal class CancelGigCommand
+    public class CancelGigCommand
     {
     }
 }

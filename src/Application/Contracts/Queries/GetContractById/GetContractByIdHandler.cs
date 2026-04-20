@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Contracts.Queries.GetContractById
 {
-    internal class GetContractByIdHandler
+    public class GetContractByIdHandler
     {
     }
 }

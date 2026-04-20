@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Gigs.Commands.CloseGig
 {
-    internal class CloseGigHandler
+    public class CloseGigHandler
     {
     }
 }

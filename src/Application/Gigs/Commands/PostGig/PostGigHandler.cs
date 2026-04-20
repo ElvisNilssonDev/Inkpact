@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Gigs.Commands.PostGig
 {
-    internal class PostGigHandler
+    public class PostGigHandler
     {
     }
 }

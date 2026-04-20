@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Gigs.Queries.SearchGigs
 {
-    internal class SearchGigsQuery
+    public class SearchGigsQuery
     {
     }
 }

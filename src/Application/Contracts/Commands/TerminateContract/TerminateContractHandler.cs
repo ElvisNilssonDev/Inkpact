@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Contracts.Commands.TerminateContract
 {
-    internal class TerminateContractHandler
+    public class TerminateContractHandler
     {
     }
 }

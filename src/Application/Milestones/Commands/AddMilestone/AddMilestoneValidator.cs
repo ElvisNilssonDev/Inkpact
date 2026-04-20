@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Milestones.Commands.AddMilestone
 {
-    internal class AddMilestoneValidator
+    public class AddMilestoneValidator
     {
     }
 }

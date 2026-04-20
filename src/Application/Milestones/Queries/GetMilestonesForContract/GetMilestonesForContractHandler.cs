@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Milestones.Queries.GetMilestonesForContract
 {
-    internal class GetMilestonesForContractHandler
+    public class GetMilestonesForContractHandler
     {
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Reviews.Queries.GetReviewForFreeLancer
 {
-    internal class GetReviewForFreelancerHandler
+    public class GetReviewForFreelancerHandler
     {
     }
 }

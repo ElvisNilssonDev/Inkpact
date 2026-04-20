@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Milestones.Commands.SubmitMilestone
 {
-    internal class SubmitMilestoneHandler
+    public class SubmitMilestoneHandler
     {
     }
 }

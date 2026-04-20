@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Infrastructure.Services
 {
-    internal class EmailService
+    public class EmailService
     {
     }
 }

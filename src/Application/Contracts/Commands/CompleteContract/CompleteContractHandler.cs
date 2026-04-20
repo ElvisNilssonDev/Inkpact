@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Contracts.Commands.CompleteContract
 {
-    internal class CompleteContractHandler
+    public class CompleteContractHandler
     {
     }
 }

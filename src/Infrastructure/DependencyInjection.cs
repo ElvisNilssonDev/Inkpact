@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Infrastructure.Services
+namespace Infrastructure
 {
-    internal class DependencyInjection
+    public class DependencyInjection
     {
     }
 }
