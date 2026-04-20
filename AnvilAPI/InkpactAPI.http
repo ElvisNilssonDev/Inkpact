@@ -1,0 +1,6 @@
+@InkpactAPI_HostAddress = http://localhost:5016
+
+GET {{InkpactAPI_HostAddress}}
+Accept: application/json
+
+###
