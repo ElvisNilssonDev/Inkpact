@@ -1,6 +1,6 @@
 ﻿namespace InkpactAPI.Controllers
 {
-    public class proposalController
+    public class ProposalController
     {
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Events
 {
-    internal class ProposalAcceptedEvent
+    public class ProposalAcceptedEvent
     {
     }
 }

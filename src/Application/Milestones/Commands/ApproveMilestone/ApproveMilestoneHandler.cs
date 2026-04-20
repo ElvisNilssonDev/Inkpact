@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Milestones.Commands.ApproveMilestone
 {
-    internal class ApproveMilestoneHandler
+    public class ApproveMilestoneHandler
     {
     }
 }

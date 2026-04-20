@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Infrastructure.Persistence.Configurations
 {
-    internal class InvoiceLineItemConfiguration
+    public class InvoiceLineItemConfiguration
     {
     }
 }

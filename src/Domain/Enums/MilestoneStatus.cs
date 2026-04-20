@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Domain.Enums
+﻿namespace Domain.Enums
 {
-    internal class MilestoneStatus
+    public enum MilestoneStatus
     {
+        Pending,
+        Submitted,
+        Approved,
+        Rejected
     }
 }

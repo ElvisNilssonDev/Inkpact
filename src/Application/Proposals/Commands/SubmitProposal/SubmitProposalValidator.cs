@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Proposals.Commands.SubmitProposal
 {
-    internal class SubmitProposalValidator
+    public class SubmitProposalValidator
     {
     }
 }

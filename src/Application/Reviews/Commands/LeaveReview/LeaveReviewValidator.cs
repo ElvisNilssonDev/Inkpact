@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Reviews.Commands.LeaveReview
 {
-    internal class LeaveReviewValidator
+    public class LeaveReviewValidator
     {
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Invoices.Commands
 {
-    internal class MarkInvoicePaidHandler
+    public class MarkInvoicePaidHandler
     {
     }
 }

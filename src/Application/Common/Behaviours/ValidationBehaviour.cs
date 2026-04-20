@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Common.Behaviours
 {
-    internal class ValidationBehaviour
+    public class ValidationBehaviour
     {
     }
 }

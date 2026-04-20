@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git remote *)",
+      "Bash(git checkout *)",
+      "Bash(gh pr create --title 'Fix clean architecture structure' --body ' *)",
+      "PowerShell(gh *)",
+      "Bash(winget install *)",
+      "Bash(git mv *)",
+      "Bash(xargs grep *)",
+      "Bash(git add *)"
+    ]
+  }
+}

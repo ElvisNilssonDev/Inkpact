@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Proposals.Commands.AcceptProposal
 {
-    internal class AcceptProposalCommand
+    public class AcceptProposalCommand
     {
     }
 }

@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Domain.Common
+﻿namespace Domain.Common
 {
-    internal class OperationResultStatus
+    public enum OperationResultStatus
     {
+        Success,
+        NotFound,
+        Unauthorized,
+        Validation,
+        Error
     }
 }

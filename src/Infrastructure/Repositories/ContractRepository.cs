@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Infrastructure.Repositories
 {
-    internal class ContractRepository
+    public class ContractRepository
     {
     }
 }

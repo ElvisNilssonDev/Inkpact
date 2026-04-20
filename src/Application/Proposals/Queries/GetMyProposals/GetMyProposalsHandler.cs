@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Proposals.Queries.GetMyProposals
 {
-    internal class GetMyProposalsHandler
+    public class GetMyProposalsHandler
     {
     }
 }

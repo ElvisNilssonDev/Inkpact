@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Proposals.Queries.GetProposalForGig
 {
-    internal class GetProposalForGigHandler
+    public class GetProposalForGigHandler
     {
     }
 }

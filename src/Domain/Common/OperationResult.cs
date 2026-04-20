@@ -1,10 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Domain.Common
+﻿namespace Domain.Common
 {
-    internal class OperationResult
+    public class OperationResult<T>
     {
+        public T? Value { get; private set; }
+        public OperationResultStatus Status { get; private set; }
+        public string? ErrorMessage { get; private set; }
+
+        public bool IsSuccess => Status == OperationResultStatus.Success;
+
+        public static OperationResult<T> Success(T value) =>
+            new() { Value = value, Status = OperationResultStatus.Success };
+
+        public static OperationResult<T> Failure(string errorMessage, OperationResultStatus status = OperationResultStatus.Error) =>
+            new() { ErrorMessage = errorMessage, Status = status };
     }
 }

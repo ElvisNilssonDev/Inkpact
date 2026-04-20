@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Infrastructure.Persistence
 {
-    internal class AppDbContext
+    public class AppDbContext
     {
     }
 }

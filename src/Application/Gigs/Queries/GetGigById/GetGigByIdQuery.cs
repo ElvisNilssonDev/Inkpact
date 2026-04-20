@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Gigs.Queries.GetGigById
 {
-    internal class GetGigByIdQuery
+    public class GetGigByIdQuery
     {
     }
 }

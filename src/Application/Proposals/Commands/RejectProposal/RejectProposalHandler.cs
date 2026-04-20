@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Proposals.Commands.RejectProposal
 {
-    internal class RejectProposalHandler
+    public class RejectProposalHandler
     {
     }
 }

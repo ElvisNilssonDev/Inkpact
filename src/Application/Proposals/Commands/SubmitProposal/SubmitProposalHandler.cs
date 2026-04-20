@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Application.Proposals.Commands.SubmitProposal
+﻿namespace Application.Proposals.Commands.SubmitProposal
 {
-    internal class SubmitProposalHAndler
+    public class SubmitProposalHandler
     {
     }
 }

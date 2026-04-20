@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Interfaces
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork
     {
     }
 }

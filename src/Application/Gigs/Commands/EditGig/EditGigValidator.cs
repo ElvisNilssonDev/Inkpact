@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Gigs.Commands.EditGig
 {
-    internal class EditGigValidator
+    public class EditGigValidator
     {
     }
 }
