@@ -4,6 +4,7 @@
     {
         Active,
         Completed,
+        Disputed,
         Terminated
     }
 }
