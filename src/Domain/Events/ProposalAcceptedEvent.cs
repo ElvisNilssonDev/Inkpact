@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MediatR;
 
 namespace Domain.Events
 {
-    public class ProposalAcceptedEvent
-    {
-    }
+    public record ProposalAcceptedEvent(Guid ProposalId, Guid GigId, Guid FreelancerId) : INotification;
 }

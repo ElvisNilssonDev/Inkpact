@@ -1,10 +1,9 @@
-﻿using System;
+﻿using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Domain.Events
 {
-    public class ContractCompletedEvent
-    {
-    }
+    public record ContractCompletedEvent(Guid ContractId, Guid ClientId, Guid FreelancerId) : INotification;
 }
