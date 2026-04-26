@@ -2,10 +2,10 @@
 {
     public enum OperationResultStatus
     {
-        Success,
+        Ok,
+        BadRequest,
         NotFound,
         Unauthorized,
-        Validation,
-        Error
+        Conflict
     }
 }
