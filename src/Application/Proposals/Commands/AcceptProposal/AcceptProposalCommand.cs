@@ -1,10 +1,13 @@
-﻿using System;
+﻿using Domain.Common;
+using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Application.Proposals.Commands.AcceptProposal
 {
-    public class AcceptProposalCommand
-    {
-    }
+    public record AcceptProposalCommand(
+    Guid ProposalId,
+    Guid CallerId
+    ) : IRequest<OperationResult<Guid>>;
 }
