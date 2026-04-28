@@ -13,6 +13,6 @@ namespace Domain.Entities
         public string? PortfolioUrl { get; set; }
 
         public Guid UserId { get; set; }
-        public User User { get; set; }
+        public required User User { get; set; }
     }
 }
