@@ -13,7 +13,7 @@ namespace Application.Gigs.Commands.CloseGig
     {
         private IUnitOfWork _uow;
 
-        public CloseGigHandler(IUnitOfWork _uow) => _uow = _uow;
+        public CloseGigHandler(IUnitOfWork uow) => _uow = uow;
 
         public async Task<OperationResult<bool>> Handle(
             CloseGigCommand request,

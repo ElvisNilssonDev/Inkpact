@@ -52,7 +52,7 @@ namespace Application.Gigs.Queries.SearchGigs
                 matches.Count
             );
 
-            return result.AsSuccess();
+            return OperationResult<PagedResult<GigDto>>.Success(result);
         }
     }
 }
