@@ -1,1 +1,1 @@
-![Logo:](https://github.com/ElvisNilssonDev/Inkpact/blob/a8dda1f55f3f64dbaf1a15c45eb1275931995ec2/img/Gemini_Generated_Image_2exsq72exsq72exs.png)<br/>
+![Logo:](https://github.com/ElvisNilssonDev/Inkpact/blob/d05b897b8097350d76bb9f1e7a0e9cf1627a8edd/img/ChatGPT%20Image%20Apr%2028%2C%202026%2C%2008_06_02%20PM.png)<br/>
