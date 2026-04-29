@@ -11,7 +11,7 @@ namespace Domain.Interfaces
         IProposalRepository Proposals { get; }
         IContractRepository Contracts { get; }
         IMilestoneRepository Milestones { get; }
-        IInvoiceRepository Invoice { get; }
+        IInvoiceRepository Invoices { get; }
         Task<int> SaveChangesAsync(CancellationToken ct = default);
     }
 }
