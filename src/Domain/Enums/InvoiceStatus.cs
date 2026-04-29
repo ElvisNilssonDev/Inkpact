@@ -3,7 +3,7 @@
     public enum InvoiceStatus
     {
         Draft,
-        Pending,
+        Sent,
         Paid,
         Overdue
     }

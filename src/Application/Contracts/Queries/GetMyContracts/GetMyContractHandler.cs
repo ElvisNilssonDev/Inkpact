@@ -33,18 +33,20 @@ namespace Application.Contracts.Queries.GetMyContracts
                 var freelancer = await _uow.Users.GetByIdAsync(c.FreelancerId, ct);
 
                 dtos.Add(new ContractDto(
-                    c.Id,
-                    c.AgreedRate,
-                    c.StartDate,
-                    c.EndDate,
-                    c.Status,
-                    c.GigId,
-                    gig?.Title ?? "Unknown",
-                    c.ClientId,
-                    client?.Name ?? "Unknown",
-                    c.FreelancerId,
-                    freelancer?.Name ?? "Unknown",
-                    c.CreatedAt
+                c.Id,
+                c.AgreedRate,
+                c.StartDate,
+                c.EndDate,
+                c.Status,
+                c.TerminationReason,    
+                c.TerminatedAt,         
+                c.GigId,
+                gig?.Title ?? "Unknown",
+                c.ClientId,
+                client?.Name ?? "Unknown",
+                c.FreelancerId,
+                freelancer?.Name ?? "Unknown",
+                c.CreatedAt
                 ));
             }
 
