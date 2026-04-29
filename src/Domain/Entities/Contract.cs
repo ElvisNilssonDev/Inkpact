@@ -11,6 +11,8 @@ namespace Domain.Entities
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public ContractStatus Status { get; set; } = ContractStatus.Active;
+        public string? TerminationReason { get; set; }   // ← NEW
+        public DateTime? TerminatedAt { get; set; }      // ← NEW (bonus, useful for audit)
 
         public Guid GigId { get; set; }
         public Gig Gig { get; set; } = null!;
