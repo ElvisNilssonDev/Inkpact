@@ -12,6 +12,7 @@ namespace Domain.Interfaces
         IContractRepository Contracts { get; }
         IMilestoneRepository Milestones { get; }
         IInvoiceRepository Invoices { get; }
+        IReviewRepository Reviews { get; }
         Task<int> SaveChangesAsync(CancellationToken ct = default);
     }
 }
