@@ -1,0 +1,13 @@
+﻿using Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Domain.Interfaces
+{
+    public interface IJwtService
+    {
+        string GenerateToken(User user);
+        Guid? ValidateToken(string token);
+    }
+}
