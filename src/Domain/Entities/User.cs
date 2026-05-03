@@ -16,6 +16,6 @@ namespace Domain.Entities
         public FreelancerProfile? FreelancerProfile { get; set; }
         public ICollection<Gig> PostedGigs { get; set; } = new List<Gig>();
         public ICollection<Proposal> Proposals { get; set; } = new List<Proposal>();
-        public ICollection<Review> Reviews { get; set; } = new List<Review>();
+        public ICollection<Review> ReviewsGiven { get; set; } = new List<Review>();
     }
 }
