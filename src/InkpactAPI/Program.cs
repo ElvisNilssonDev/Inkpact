@@ -1,11 +1,14 @@
 using System.Text;
 using Application.Common.Behaviours;
 using FluentValidation;
+using InkpactAPI.Common;
 using Infrastructure;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Scalar.AspNetCore;
+
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -76,9 +79,16 @@ builder.Services.AddCors(options =>
 // ─────────────────────────────────────────────────────────
 // 7. Controllers + HttpContextAccessor + OpenAPI
 // ─────────────────────────────────────────────────────────
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
+    });
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddOpenApi();
+builder.Services.AddOpenApi(options =>
+{
+    options.AddDocumentTransformer<BearerSecuritySchemeTransformer>();
+});
 
 // ─────────────────────────────────────────────────────────
 // Build app
