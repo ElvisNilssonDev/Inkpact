@@ -33,7 +33,7 @@ namespace Application.Invoices.Commands
                 return "Invoice is already paid.".AsFailure<bool>(OperationResultStatus.Conflict);
 
             invoice.Status = Domain.Enums.InvoiceStatus.Paid;
-            invoice.UpdatedAt = DateTime.Now;
+            invoice.UpdatedAt = DateTime.UtcNow;
             _uow.Invoices.Update(invoice);
             await _uow.SaveChangesAsync(ct);
 

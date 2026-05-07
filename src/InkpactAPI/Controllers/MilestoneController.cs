@@ -19,11 +19,11 @@ namespace InkpactAPI.Controllers
 
         public MilestonesController(IMediator mediator) => _mediator = mediator;
 
-        [HttpDelete("contract/{contractId:guid}")]
-        public async Task<IActionResult> GetForContract([FromRoute] Guid contractID)
+        [HttpGet("contract/{contractId:guid}")]
+        public async Task<IActionResult> GetForContract([FromRoute] Guid contractId)
         {
             var result = await _mediator.Send(
-                new GetMilestonesForContractQuery(contractID, User.GetUserId()));
+                new GetMilestonesForContractQuery(contractId, User.GetUserId()));
             return result.ToActionResult();
         }
 

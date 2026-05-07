@@ -21,7 +21,7 @@ namespace InkpactAPI.Controllers
         // Get all invoices for a contract. Both contract participants can view.
         [HttpGet("contract/{contractId:guid}")]
         [Authorize]
-        public async Task<IActionResult> GetForContract([FromBody] Guid contractId)
+        public async Task<IActionResult> GetForContract([FromRoute] Guid contractId)
         {
             var result = await _mediator.Send(
                 new GetInvoicesForContractQuery(contractId, User.GetUserId()));
