@@ -33,7 +33,7 @@ namespace Application.Contracts.Commands.TerminateContract
 
             contract.Status = ContractStatus.Terminated;
             contract.EndDate = DateTime.UtcNow;
-            contract.TerminatedAt = DateTime.Now;
+            contract.TerminatedAt = DateTime.UtcNow;
             contract.TerminationReason = request.Reason;
             contract.UpdatedAt = DateTime.UtcNow;
             _uow.Contracts.Update(contract);
