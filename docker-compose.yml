@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: inkpact-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: inkpact
+      POSTGRES_USER: inkpact
+      POSTGRES_PASSWORD: inkpact_dev_pw
+    ports:
+      - "5432:5432"
+    volumes:
+      - inkpact_pgdata:/var/lib/postgresql/data
+
+volumes:
+  inkpact_pgdata:
