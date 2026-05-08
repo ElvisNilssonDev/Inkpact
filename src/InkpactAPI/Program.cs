@@ -71,7 +71,8 @@ builder.Services.AddCors(options =>
         policy.WithOrigins(
                 "http://localhost:5173",       // Vite dev server
                 "http://localhost:3000",       // common React dev port
-                "https://inkpact.vercel.app"   // future production frontend
+                "https://inkpact.vercel.app",
+                "https://inkpact-production-0e41.up.railway.app"   // future production frontend
             )
             .AllowAnyMethod()
             .AllowAnyHeader());
