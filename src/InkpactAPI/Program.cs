@@ -104,8 +104,7 @@ using (var scope = app.Services.CreateScope())
 // ─────────────────────────────────────────────────────────
 // HTTP pipeline
 // ─────────────────────────────────────────────────────────
-if (app.Environment.IsDevelopment())
-{
+
     app.MapOpenApi();
     app.MapScalarApiReference(options =>
     {
@@ -113,7 +112,7 @@ if (app.Environment.IsDevelopment())
                .WithTheme(ScalarTheme.Purple);
                
     });
-}
+
 
 app.UseMiddleware<InkpactAPI.Middleware.GlobalExceptionMiddleware>();
 app.UseHttpsRedirection();
