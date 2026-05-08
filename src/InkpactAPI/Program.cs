@@ -1,6 +1,7 @@
 using Application.Common.Behaviours;
 using FluentValidation;
 using Infrastructure;
+using Microsoft.AspNetCore.HttpOverrides;
 using InkpactAPI.Common;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -12,6 +13,12 @@ using System.Text;
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.Configure<ForwardedHeadersOptions>(options =>
+{
+    options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
+    options.KnownNetworks.Clear();
+    options.KnownProxies.Clear();
+});
 
 // ─────────────────────────────────────────────────────────
 // 1. Infrastructure layer (DbContext, Repositories, UnitOfWork, JWT, Email)
@@ -96,6 +103,7 @@ builder.Services.AddOpenApi(options =>
 // Build app
 // ─────────────────────────────────────────────────────────
 var app = builder.Build();
+app.UseForwardedHeaders();
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<Infrastructure.Persistence.AppDbContext>();
