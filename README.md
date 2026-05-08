@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="./assets/inkpact-logo.png" alt="Inkpact Logo" width="220" />
+<img src="./assets/inkpact-logo.png" alt="Inkpact Logo" width="820" />
 
 <br/>
 
-<i>Forged in Trust · The Legacy of Precision</i>
+
 
 <br/><br/>
 
@@ -17,7 +17,7 @@
 
 <br/><br/>
 
-# Inkpact
+
 
 **A backend platform for the freelance economy — gig discovery, contracts, milestones, invoicing, and reviews, all enforced by domain logic.**
 
