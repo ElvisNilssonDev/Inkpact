@@ -1,12 +1,13 @@
-using System.Text;
 using Application.Common.Behaviours;
 using FluentValidation;
-using InkpactAPI.Common;
 using Infrastructure;
+using InkpactAPI.Common;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Scalar.AspNetCore;
+using System.Text;
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
@@ -94,6 +95,11 @@ builder.Services.AddOpenApi(options =>
 // Build app
 // ─────────────────────────────────────────────────────────
 var app = builder.Build();
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<Infrastructure.Persistence.AppDbContext>();
+    db.Database.Migrate();
+}
 
 // ─────────────────────────────────────────────────────────
 // HTTP pipeline
