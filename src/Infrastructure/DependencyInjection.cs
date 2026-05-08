@@ -1,5 +1,5 @@
 ﻿using Domain.Interfaces;
-
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Infrastructure.Persistence;
 using Infrastructure.Repositories;
 using Infrastructure.Services;
@@ -20,7 +20,8 @@ namespace Infrastructure
         {
             // Database
             services.AddDbContext<AppDbContext>(options =>
-                options.UseNpgsql(config.GetConnectionString("DefaultConnection")));
+            options.UseNpgsql(config.GetConnectionString("DefaultConnection"))
+           .ConfigureWarnings(w => w.Ignore(RelationalEventId.PendingModelChangesWarning)));
 
             // Repositories
             services.AddScoped<IUserRepository, UserRepository>();
