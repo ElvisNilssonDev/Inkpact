@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using FluentValidation;
 
 namespace Application.Proposals.Commands.AcceptProposal
 {
-    public class AcceptProposalValidator
+    public class AcceptProposalValidator : AbstractValidator<AcceptProposalCommand>
     {
+        public AcceptProposalValidator()
+        {
+            RuleFor(x => x.ProposalId).NotEmpty();
+            RuleFor(x => x.CallerId).NotEmpty();
+        }
     }
 }
