@@ -37,7 +37,7 @@ namespace Application.Auth.Commands.Login
                 user.Email,
                 user.Role,
                 token,
-                DateTime.UtcNow.AddMinutes(60)
+                DateTime.UtcNow.AddMinutes(45)
             );
 
             return response.AsSuccess();
