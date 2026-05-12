@@ -39,7 +39,7 @@ It's designed as a portfolio piece demonstrating production-grade backend archit
 
 ---
 
-## 🚀 Try it live
+## 🚀 Try it live!
 
 The API is deployed and ready to test. No setup required — interactive API docs are open to the public.
 
