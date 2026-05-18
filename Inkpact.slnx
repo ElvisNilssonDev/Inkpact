@@ -6,6 +6,8 @@
     <Project Path="src/Infrastructure/Infrastructure.csproj" />
   </Folder>
   <Folder Name="/tests/">
-    <Project Path="Tests/Tests.csproj" />
+    <Project Path="tests/Inkpact.Application.Tests/Inkpact.Application.Tests.csproj" />
+    <Project Path="tests/Inkpact.Domain.Tests/Inkpact.Domain.Tests.csproj" />
+    <Project Path="tests/Inkpact.Integration.Tests/Inkpact.Integration.Tests.csproj" />
   </Folder>
 </Solution>
